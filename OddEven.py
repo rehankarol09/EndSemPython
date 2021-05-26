@@ -16,19 +16,17 @@ def len_array(list1):
 
 def createlist_even(list1):
     n=0
+    n = int(input("Enter the no of elements in even range"))
     while True:
-        n=int(input("Enter the no of elements in even range"))
-        if n%2==0 and n!=0:
+        if n%2 ==0 and n!=0:
             for i in range(n):
-                data=int(input("Enter the element"))
+                data = int(input("Enter the element"))
                 list1.append(data)
             break
         else:
             n = int(input("Enter the no of elements in even range"))
-            for i in range(n):
-                data=int(input("Enter the element"))
-                list1.append(data)
-            break
+
+
 
 def createlist_odd(list1):
     n=0
@@ -41,10 +39,7 @@ def createlist_odd(list1):
             break
         else:
             n = int(input("Enter the no of elements in odd range"))
-            for i in range(n):
-                data=int(input("Enter the element"))
-                list1.append(data)
-            break
+
 
 
 if __name__ == '__main__':
@@ -57,6 +52,9 @@ if __name__ == '__main__':
     print("The length of fisrt array:", len_array(list1))
     print("The median of 2 array:" + str(median_fun(list2)))
     print("The length of second array:", len_array(list2))
+
+
+
 
 
 
